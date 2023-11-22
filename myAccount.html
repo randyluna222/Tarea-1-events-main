@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Css/styles.css">
+  <title>My Account</title>
+</head>
+
+<body>
+  <div id="overlay"></div>
+  <header>
+    <div class="backButton__container">
+      <a class="back__link hover__effect" href="./index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+        Back to events
+      </a>
+    </div>
+    <div id="tabsContainer">
+
+    </div>
+  </header>
+  <div id="grid"></div>
+  <div id="overlay" onclick="cerrarCard()"></div>
+  <div class="calendar" style="display: none;">
+    <h2 class="header">Calendario</h2>
+    <div class="calendar-btns">
+      <button id="prev-month-btn">Anterior</button>
+      <span class = "current-month-title"></span>
+      <span class = "current-year-title"></span>
+      <button id="next-month-btn">Siguiente</button>
+    </div>
+    <div class="weekdays">
+      <div class="weekday">Domingo</div>
+      <div class="weekday">Lunes</div>
+      <div class="weekday">Martes</div>
+      <div class="weekday">Miércoles</div>
+      <div class="weekday">Jueves</div>
+      <div class="weekday">Viernes</div>
+      <div class="weekday">Sábado</div>
+    </div>
+    <div class="days" id="calendar-days"></div>
+  </div>
+  <div class="hidden__card"></div>
+
+  <script type="module" src="./src/account.js"></script>
+</body>
+
+</html>
